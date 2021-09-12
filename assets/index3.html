@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calm & Care</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style3.css" />
+  </head>
+  <body>
+      <header>
+          <h1>
+              <!--This needs some work!-->
+              Please pick a date to meet your new friend!
+          </h1>
+      </header>
+    <div class="calendar" id="calendar">
+        <div class="calendar-btn month-btn" onclick="$('#months').toggle('fast')">
+            <span id="curMonth"></span>
+            <div id="months" class="months dropdown"></div>
+        </div>
+    
+        <div class="calendar-btn year-btn" onclick="$('#years').toggle('fast')">
+            <span id="curYear"></span>
+            <div id="years" class="years dropdown"></div>
+        </div>
+    
+        <div class="clear"></div>
+    
+        <div class="calendar-dates">
+            <div class="days">
+                <div class="day label">SUN</div>
+                <div class="day label">MON</div>
+                <div class="day label">TUE</div>
+                <div class="day label">WED</div>
+                <div class="day label">THUR</div>
+                <div class="day label">FRI</div>
+                <div class="day label">SAT</div>
+    
+                <div class="clear"></div>
+            </div>
+    
+            <div id="calendarDays" class="days">
+            </div>
+        </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+<script src="./assets/JavaScript/JavaScript3.js"></script>
+  </body>
+</html>
