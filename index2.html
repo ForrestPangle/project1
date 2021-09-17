@@ -17,22 +17,37 @@
   </header>
 
   <div class="wrapper">
+
     <label id="animalType">
-      <input type="text" required="required"/>
-      <span>What Type of Animal: Cat or Dog</span>
+        <input list="typeAnimal" type="text" required="required" />
+        <datalist id="typeAnimal">
+          <option>Dog</option>
+          <option>Cat</option>
+        </datalist>
+        <span>What Type of Animal: Cat or Dog</span>
     </label>
-    
+
     <label id="careType">
-      <input type="text" class="dateselect2" required="required"/>
-      <span>Friendly Care: Adoption or Veterinarian</span>
+      <input list="typeCare" type="text" class="dateselect2" required="required"/>
+      <datalist id="typeCare">  
+        <option>Groomers</option>
+        <option>Veterinarian</option>
+      </datalist>
+      <span>Friendly Care:</span>
+    </label>
+
+    <label id="zipCode">
+      <input type="text" class="dateselect3" required="required"/>
+      <span>Please Enter Zip Code:</span>
     </label>
     
-    <form class="container">    
+
+    <form class="container">
       <button>Enter</button>
     </form>
-    
-    
-    
+
+
+
   </div>
 
 
