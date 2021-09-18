@@ -25,4 +25,4 @@ var newUser = {
 }
 
 //make onclick event to connect signup function to registration value//
-document.getElementById("registerbutton").addEventListener("click", );
+document.getElementById("register-btn").addEventListener("click", );
