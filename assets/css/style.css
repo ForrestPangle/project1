@@ -1,17 +1,26 @@
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body, *{
+    padding:0px;
+    margin:0px;
     box-sizing: border-box;
 }
 
-:focus {
-    outline: none;
+.navbar {
+    background-color: #5e29687a;
+    color: wheat;
 }
-.form {
-    width: 440px;
-    border: 10px;
-    border: #5e29687a;
-    border-inline-start-color: #5e29687a;
-    height: 600px;
-    margin: 50px auto;
-    outline: 5px solid wheat;
+
+a {
+    color: wheat;
+}
+
+i {
+    color: #5e29687a; 
+}
+
+p {
+    color: #777777
+}
+
+#login {
+    color: #560067;
 }
