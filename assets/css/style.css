@@ -1,0 +1,17 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: none;
+}
+.form {
+    width: 440px;
+    border: 10px;
+    border: #5e29687a;
+    border-inline-start-color: #5e29687a;
+    height: 600px;
+    margin: 50px auto;
+    outline: 5px solid wheat;
+}
