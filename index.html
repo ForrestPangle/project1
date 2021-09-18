@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style3.css">
-    <link rel="stylesheet" href="./css/style3.css">
+    <link rel="stylesheet" href="./assets/css/style3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       rel="stylesheet"
@@ -21,7 +20,6 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index2.html">Features</a></li>
                     <li><a href="index3.html">Schedule Apointment</a></li>
                 </ul>
             </nav>
@@ -34,27 +32,41 @@
             <div class="showcase-text">
                 <h1>Pets are like family! Treat them like it :)</h1>
                 <p>No matter where you live make sure your pets are getting the care they deserve!</p>
-                <a href="features.html" class="btn-outline">Read More</a>
             </div>
             
-            <div class="showcase-form card">
-                <h2>Sign up today!</h2>
-                <form>
-                    <div class="form-control">
-                        <input type="text" name="name" placeholder="User Name" required>
+            <div class="holder">
+                    <div class="parent">
+                        <h3>Sign Up</h3>
+                        <form action="">
+    
+                            <div>
+                                <input type="text" id="name" placeholder="Name *" required>
+                                <span class="border"></span>
+                            </div>
+    
+                            <div>
+                                <input type="email" id="email" placeholder="Email *" required>
+                                <span class="border"></span>
+                            </div>
+    
+                            <div>
+                                    <input type="password" id="password" placeholder="Password *" required>
+                                    <span class="border"></span>
+                            </div>
+    
+                            <div>
+                                <input type="password" id="confirmpassword" placeholder="Confirm Password *" required>
+                                <span class="border"></span>
+                            </div>
+                            <div>
+                            <li><a href="index2.html" id="register-btn" class="btn-outline">Register</a></li>
+                            <li><a href="index2.html" id="login-btn" class="btn-outline" type="submit" value="LOGIN">Log In</a></div></li>
+                            
+                        </form>
+    
                     </div>
-                    <div class="form-control">
-                        <input type="text" name="name" placeholder="Password" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" name="name" placeholder="Confirm Password" required>
-                    </div>
-                    <div class="form-control">
-                    <input type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <input type="submit" value="enter" class="btn btn-primary">
-                </form>
-            </div> 
+    
+                </div>
         </section>
 
         <!-- Stats -->
@@ -95,5 +107,6 @@
             </div>
         </div>
     </section>
+    <script src ="assets/JavaScript/JavaScript.js"></script>
 </body>
 </html>
