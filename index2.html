@@ -18,36 +18,34 @@
 
   <div class="wrapper">
 
-    <label id="animalType">
-        <input list="typeAnimal" type="text" required="required" />
-        <datalist id="typeAnimal">
-          <option>Dog</option>
-          <option>Cat</option>
-        </datalist>
-        <span>What Type of Animal: Cat or Dog</span>
-    </label>
+    <label for="typeAnimal" id="animalType">What Type of Animal: Cat or Dog</label>
+    <!-- <input list="typeAnimal" type="text" required="required" id="animal-input" -->
+    <!-- data-error="Please enter either cat or dog" /> -->
+    <select id="typeAnimal">
+      <option>Dog</option>
+      <option>Cat</option>
+    </select>
+    <hr />
 
-    <label id="careType">
-      <input list="typeCare" type="text" class="dateselect2" required="required"/>
-      <datalist id="typeCare">  
-        <option id="groomers">Groomers</option>
-        <option id="veterinarian">Veterinarian</option>
-      </datalist>
-      <span>Friendly Care:Groomer or Veterinarian</span>
-    </label>
+    <label id="careType">Friendly Care: Groomer or Veterinarian</label>
+    <select id="typeCare">
+      <option id="groomers">Groomers</option>
+      <option id="veterinarian">Veterinarian</option>
+    </select>
+    <hr>
 
     <label id="zipCode">
-      <input type="text" class="dateselect3" required="required"/>
+      <input type="text" class="dateselect3" required="required" />
       <span>Please Enter Zip Code:</span>
     </label>
-    
+
 
     <form class="container">
-      <button id="enterBtn" type="submit" >Enter</button>
+      <button id="enterBtn" type="submit">Enter</button>
     </form>
   </div>
 
-<script src="./assets/JavaScript/JavaScript2.js"></script>
+  <script src="./assets/JavaScript/JavaScript2.js"></script>
 </body>
 
 </html>
