@@ -1,0 +1,1 @@
+# Contributing quality code is an amazing way
