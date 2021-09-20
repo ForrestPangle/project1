@@ -1,17 +1,55 @@
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body, *{
+    padding:0px;
+    margin:0px;
     box-sizing: border-box;
 }
 
-:focus {
-    outline: none;
+.navbar {
+    background-color: #5e29687a;
+    color: wheat;
 }
-.form {
-    width: 440px;
-    border: 10px;
-    border: #5e29687a;
-    border-inline-start-color: #5e29687a;
-    height: 600px;
-    margin: 50px auto;
-    outline: 5px solid wheat;
+
+a {
+    color: wheat;
+}
+
+a:hover {
+    text-decoration:none;
+    font: wheat;
+    color: wheat; 
+    background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+	background-color:#a20dbd;
+}
+
+i {
+    color: #5e29687a; 
+}
+
+p {
+    color: #777777
+}
+
+#login {
+	box-shadow:inset 0px 1px 0px 0px #e184f3;
+	background:linear-gradient(to bottom, #5e29687a 5%, #5e29687a 100%);
+	background-color:#5e29687a;
+	border-radius:6px;
+	border:1px solid wheat;
+	display:inline-block;
+	cursor:pointer;
+	color:wheat;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px wheat;
+}
+#login:hover {
+    background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+	background-color:#a20dbd;
+}
+#login:active {
+	position:relative;
+	top:1px;
 }
