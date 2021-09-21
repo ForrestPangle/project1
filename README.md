@@ -13,7 +13,7 @@ Calm & Care helps you search for a Groomer or Veterinarian in your selected area
 If you use Calm & Care then you will have the ability to schedule a date to take 
 your pet essential are.
 You'll like Calm & Care because you have control of your busy scheduled and the essiemtial care needed for your pet. 
-You'll have the ability to schedule a date to bring your pet to your chosen location of service and recieve their essiental care.
+You'll have the ability to schedule a date to bring your pet to your chosen location of service and recieve their essiental care!
 
 <br />
 
