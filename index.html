@@ -30,26 +30,42 @@
                 <h2>Pets are like family! Treat them like it!</h2>
                 <p>No matter where you live make sure your pets are getting the care they deserve!</p>
             </div>
-            
-            <div class="holder">
-                    <div class="parent">
-                        <h3>Create Account</h3>
-                            <div>
-                                <input type="text" placeholder="Name *">
-                                <span class="border"></span>
-                            </div>
-    
-                            <div>
-                                <input type="email" placeholder="Email *">
-                                <span class="border"></span>
-                            </div>
-                            <div>
-                            <a href="index2.html" id="login">Log In</a></div>
+            <form id="login-form" action="submit">
+                <fieldset>
+                    <legend>
+                        User Account
+                    </legend>
+                    <div>
+                        <label for="username">Username</label>
+                        <input id="username" type="text" name="username" placeholder="Eg. John Doe" required/>
                     </div>
-                </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input id="password" type="password" name="password" 
+                        placeholder="password"
+                        required />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Login Type
+                    </legend>
+                    <span>
+                        <input id="register" type="radio" name="login_type" value="register" checked="checked">
+                        <label for="register">Register</label>
+                    </span>
+                    <span>
+                        <input id="login" type="radio" name="login_type" value="login">
+                        <label for="login">Login</label>
+                    </span>
+                </fieldset>
+                <input type="submit"
+                id="inputbtn" value="Submit" />
+                <output name="result"></output>
+            </form>
         </section>
 
-        <!-- Stats -->
+        <!-- Information -->
         <section class="stats">
             <div class="container">
                 <h3 class="stats-heading text-center my-1">
@@ -73,5 +89,6 @@
                 </div>
             </div>
         </section>
+    <script src="./assets/JavaScript/JavaScript.js"></script>
 </body>
 </html>
