@@ -17,6 +17,9 @@ enterButton.addEventListener("click", function(e) {
     if (animalInput == "" || careInput == "" || zipCode == "") {
         alert("Please enter info in all fields");
     }
+
+    petFinder();
+    renderZipCode();
 })
 
 // if (animalInput.value == "" || animalInput.value == null) {
@@ -25,7 +28,6 @@ enterButton.addEventListener("click", function(e) {
 
 function petFinder() {
     var petURL = "https://api.petfinder.com/v2/oauth2/token";
-    console.log(petURL);
     fetch(petURL, {
         method: "POST",
         headers: {
@@ -54,4 +56,19 @@ function petFinder() {
     })
 }
 
-petFinder();
+function renderZipCode() {
+    var easy = zipCode.value;
+    var zipURL = "https://cors-anywhere.herokuapp.com/https://www.zipcodeapi.com/rest/XUz25Av4wCWSh43hVoEGaLAQn0u5L6sOsDXy7HJQdOA8MV1p0ZroUKC940xmkiMF/radius.json/" + easy + "/10/mile";
+    fetch(zipURL)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        console.log(data);
+    })
+    .catch(function(error){
+        console.log(error);
+    })
+
+}
+
