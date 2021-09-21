@@ -58,7 +58,7 @@ function petFinder() {
 
 function renderZipCode() {
     var easy = zipCode.value;
-    var zipURL = "https://cors-anywhere.herokuapp.com/https://www.zipcodeapi.com/rest/XUz25Av4wCWSh43hVoEGaLAQn0u5L6sOsDXy7HJQdOA8MV1p0ZroUKC940xmkiMF/radius.json/" + easy + "/10/mile";
+    var zipURL = "https://secret-ocean-49799.herokuapp.com/https://www.zipcodeapi.com/rest/" + zipAPI + "/radius.json/" + easy + "/10/mile";
     fetch(zipURL)
     .then(function(response){
         return response.json();
@@ -71,4 +71,7 @@ function renderZipCode() {
     })
 
 }
+
+
+
 
